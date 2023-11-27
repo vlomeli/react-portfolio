@@ -9,9 +9,10 @@
 
 body {
     margin: 0;
-    background-color: #1F305E;
     color: white;
+    background-color: #1F305E;
 }
+
 
 .about {
     height: 100vh;
@@ -26,6 +27,7 @@ body {
 }
 
 .about-content h1{
+    color: white;
     font-size: 25px;
     font-weight:700;
 }
@@ -48,6 +50,7 @@ body {
 }
 
 .home-content h1{
+    color:white;
     font-size: 43px;
     font-weight:700;
 }
@@ -67,9 +70,11 @@ body {
     gap: 2rem;
     padding: 0 5%;
 }
+
 .site-title {
     font-size: 2rem;
 }
+
 .nav ul {
     padding: 0;
     margin: 0;
@@ -95,3 +100,42 @@ body {
 .nav li.active { 
     color: #00abf0;
 }
+
+
+.card {
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    width: 250px;
+    margin: 20px;
+}
+
+.card-image img{
+    width: 249px;
+    height: 160px;
+}
+
+.card-title, .description {
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.description {
+    font-size: 12px;
+}
+
+.project-cards{
+    width:80%;
+    text-align: center;
+    margin-left: 10%; 
+}
+
+.project-cards > .card{
+    display: inline-block;
+}
+
