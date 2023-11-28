@@ -157,7 +157,7 @@ form {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 800px;
+    width: 700px;
     font-size: 16px;
     margin: 60px;
     padding: 70px;
@@ -172,10 +172,6 @@ form {
       outline: none;
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
-
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
     }
 
     textarea {
@@ -188,20 +184,17 @@ form {
       outline: none;
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
-
-      &:focus {
-        border: 2px solid rgba(0, 206, 158, 1);
-      }
     }
 
     label {
       margin-top: 1rem;
+      margin-bottom: 7px;
     }
 
     input[type="submit"] {
       margin-top: 2rem;
       cursor: pointer;
-      background: white;
-      color: black;
+      background: #00abf0;
+      color: white;
       border: none;
     }

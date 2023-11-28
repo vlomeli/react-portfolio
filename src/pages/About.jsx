@@ -2,7 +2,7 @@ export default function About() {
     return (
         <><section className="about"> 
         <div className="about-content">
-    <h1>ABOUT</h1>
+    <h1>ABOUT ME</h1>
         <p> I am a recent graduate of Stanislaus State University, holding a Bachelor's degree in Business Administration with a concentration 
             in Computer Information Systems. Initially aspiring to embark on a career as a computer technician, 
             my journey led me to a realization – 
