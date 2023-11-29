@@ -8,6 +8,7 @@ export default function Navbar() {
                 vLOME
             </Link>
             <ul>
+                <CustomLink to="/"> HOME </CustomLink>
                 <CustomLink to="/About"> ABOUT </CustomLink>
                 <CustomLink to="/Projects"> PROJECTS </CustomLink>
                 <CustomLink to="/Contact"> CONTACT </CustomLink>

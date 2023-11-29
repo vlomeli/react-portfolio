@@ -59,6 +59,36 @@ body {
     color: #00abf0;
 }
 
+.socials {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    gap: 20px ;
+}
+.socials img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.techstack{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+
+.tech-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between images as needed */
+}
+
+.tech-icons img {
+    max-height: 30px; /* Set a maximum height for the images if necessary */
+}
+
+
 /*css for navbar */
 
 .nav {
