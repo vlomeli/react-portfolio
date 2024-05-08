@@ -1,4 +1,4 @@
-import journal from "../images/journal.png";
+import journal from "../images/fs-journal.png";
 import tictactoe from "../images/tictactoe.png";
 import emailtemp from "../images/emailtemp.png";
 import multiplication from "../images/multiplication.png";
@@ -9,7 +9,7 @@ import reactweatherapp from "../images/reactweatherapp.png";
 const CardData = [
   {
     img: journal,
-    title: "journal",
+    title: "Journal",
     description:
       "This is my first ever fullstack project. A journal with mood tracking and an interactive calendar.",
   },
