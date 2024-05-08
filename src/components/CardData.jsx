@@ -9,7 +9,7 @@ import journal from '../images/journal.png';
 const CardData = [
     {
         img: journal,
-        title: "Journal",
+        title: "journal",
         description: "This is my first ever fullstack project. A journal with mood tracking and an interactive calendar.",
     },
     {
