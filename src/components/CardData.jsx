@@ -4,7 +4,7 @@ import multiplication from '../images/multiplication.png'
 import weatherapp from '../images/weatherapp.png'
 import loginui from '../images/loginui.png'
 import reactweatherapp from '../images/reactweatherapp.png'
-import journal from "../images/journal.png";
+import journal from '../images/journal.png';
 
 const CardData = [
     {
