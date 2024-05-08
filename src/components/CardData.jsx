@@ -4,12 +4,18 @@ import multiplication from '../images/multiplication.png'
 import weatherapp from '../images/weatherapp.png'
 import loginui from '../images/loginui.png'
 import reactweatherapp from '../images/reactweatherapp.png'
+import journal from "../images/journal.png";
 
 const CardData = [
     {
+        img: journal,
+        title: "Journal",
+        description: "This is my first ever fullstack project. A journal with mood tracking and an interactive calendar.",
+    },
+    {
         img: tictactoe,
         title: "Tic-Tac-Toe",
-        description: "This is a game that I took from a youtube video and decided to add a couple of features.",
+        description: "Tic Tac Toe game with win tracking and reset functionality. The main purpose of this project is to learn Javascript ",
     },
     {
         img: emailtemp,
@@ -19,7 +25,7 @@ const CardData = [
     {
         img: multiplication,
         title: "Multiplication Sheet",
-        description: "A multiplication game that replicates the multiplication sheet we all used to do in grade school",
+        description: "A multiplication game that replicates the multiplication sheet we all used to do in grade school.",
     },
     {
         img: weatherapp,

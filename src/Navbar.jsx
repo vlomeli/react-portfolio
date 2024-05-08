@@ -3,17 +3,19 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar() {
     return ( 
-        <nav className="nav">
-            <Link to="/" className="site-title">
-                vLOME
-            </Link>
-            <ul>
-                <CustomLink to="/"> HOME </CustomLink>
-                <CustomLink to="/About"> ABOUT </CustomLink>
-                <CustomLink to="/Projects"> PROJECTS </CustomLink>
-                <CustomLink to="/Contact"> CONTACT </CustomLink>
-            </ul>
-        </nav>
+        <div className="navbar">
+            <div className="container flex">
+                <h1 className="logo">vLOMELI</h1>
+                <nav>
+                    <ul>
+                    <CustomLink to="/"> HOME </CustomLink>
+                    <CustomLink to="/About"> ABOUT </CustomLink>
+                    <CustomLink to="/Projects"> PROJECTS </CustomLink>
+                    <CustomLink to="/Contact"> CONTACT </CustomLink>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     )
 }
 

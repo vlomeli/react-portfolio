@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Permanent+Marker&family=Playpen+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Luckiest+Guy&family=Permanent+Marker&family=Playpen+Sans:wght@800&family=Rubik:wght@300&display=swap');
 
 *{
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
     font-family: 'Luckiest Guy', cursive;
     font-family: 'Permanent Marker', cursive;
     font-family: 'Playpen Sans', cursive;
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -20,10 +22,7 @@ body {
     align-items: center;
     padding:0 20%;
     text-align: center;
-}
-
-.about-contentv {
-
+    margin-top: 10%;
 }
 
 .about-content h1{
@@ -70,65 +69,71 @@ body {
     margin-right: 15px;
 }
 
-.techstack{
+.techstack {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-
-
 .tech-icons {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adjust the gap between images as needed */
+    gap: 10px; 
 }
 
 .tech-icons img {
-    max-height: 30px; /* Set a maximum height for the images if necessary */
+    max-height: 30px; 
 }
 
 
 /*css for navbar */
 
-.nav {
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar {
     background-color: #1F305E;
     color: white;
+    height: 70px;
+}
+
+.logo {
+    font-size: 25px;
+}
+
+.navbar ul {
     display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 2rem;
-    padding: 0 5%;
-}
-
-.site-title {
-    font-size: 2rem;
-}
-
-.nav ul {
-    padding: 0;
-    margin: 0;
     list-style: none;
-    display: flex;
-    gap: 1rem;
 }
 
-.nav a {
+.navbar a {
     color: inherit;
     text-decoration: none;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: .25rem;
+    padding: 10px;
+    margin: 0 5px;
 }
 
-.nav li:hover {
+.navbar li:hover {
+    border-bottom: 1px white solid;
+}
+
+.navbar li.active { 
     color: #00abf0;
 }
 
-
-.nav li.active { 
-    color: #00abf0;
+.navbar .flex {
+    justify-content: space-between;
 }
 
 /*css for cards / project page */
@@ -164,6 +169,7 @@ body {
     width:80%;
     text-align: center;
     margin-left: 10%; 
+    margin-top: 5%;
 }
 
 .project-cards > .card{
@@ -181,6 +187,7 @@ body {
 .contact {
     display: flex;
     justify-content: center;
+    margin-top: 5%;
 }
 
 form {
@@ -195,36 +202,87 @@ form {
     box-shadow: 0 0 5px black;
 }
 
-    input {
-      width: 100%;
-      height: 35px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
+input {
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
     }
 
-    textarea {
-      max-width: 100%;
-      min-width: 100%;
-      width: 100%;
-      max-height: 100px;
-      min-height: 100px;
-      padding: 7px;
-      outline: none;
-      border-radius: 5px;
-      border: 1px solid rgb(220, 220, 220);
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
     }
 
-    label {
-      margin-top: 1rem;
-      margin-bottom: 7px;
+label {
+    margin-top: 1rem;
+    margin-bottom: 7px;
     }
 
-    input[type="submit"] {
-      margin-top: 2rem;
-      cursor: pointer;
-      background: #00abf0;
-      color: white;
-      border: none;
+input[type="submit"] {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: #00abf0;
+    color: white;
+    border: none;
     }
+
+@media (max-width: 768px) {
+     /* body {
+    display: none;
+    } */
+}
+
+@media (max-width: 500px) {
+       /* body {
+        display: none;
+        } */
+        
+      
+        .navbar {
+            height: 170px;
+            
+            padding: 10px;
+        }
+    
+        .navbar .flex {
+            flex-direction: column;
+        }
+    
+        .navbar ul {
+            padding: 10px;
+            background-color: rgba(0,0,0,0.1);
+        }
+
+        /* Home */
+
+        .home {
+            text-align: center;
+        }
+
+        .techstack {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* about */ 
+
+        .about {
+            border: yellow solid;
+            text-align: center;
+        }
+
+        .about p{
+            border: green solid;
+            font-size: 16px;
+        }
+}
