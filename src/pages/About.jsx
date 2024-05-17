@@ -1,28 +1,40 @@
 export default function About() {
     return (
-        <>
-        <section className="about"> 
-        <div className="about-content">
-    <h1>ABOUT ME</h1>
-        <p> I am a recent graduate of Stanislaus State University, holding a Bachelor's degree in Business Administration with a concentration 
-            in Computer Information Systems. Initially aspiring to embark on a career as a computer technician, 
-            my journey led me to a realization – 
-            I wanted to do more. It was during my college courses that I was introduced to coding, sparking a newfound passion.
-        </p>
+      <>
+        <section className="about">
+          <div className="about-content">
+            <h1>ABOUT ME</h1>
+            <p>
+              I am a recent graduate of Stanislaus State University, where I
+              earned a Bachelor's degree in Business Administration with a
+              concentration in Computer Information Systems. Initially, I
+              believed Information Technology was the right path for me.
+              However, as I delved deeper into the field, I realized my true
+              passion lay elsewhere within the realm of computers. I love
+              working with computers and am passionate about creating.
+            </p>
 
-        <p> Post-graduation, I decided to further explore this passion by enrolling
-            in the Bay Valley Tech Code Academy Program. Through this transformative experience, I 
-            acquired proficiency in HTML, CSS, JavaScript, React, Bootstrap, UI Design, as well as a 
-            comprehensive understanding of programming and software development as a whole.
-        </p>
-        <p> Now, I am actively pursuing my dreams as a Junior Web Developer, armed with a solid 
-            foundation and a diverse skill set. This journey has not only broadened my horizons but 
-            has empowered me to contribute meaningfully to the dynamic field of web development.
-        </p>
-        </div>
+            <p>
+              This realization led me to explore web development further,
+              prompting me to enroll in a course with Bay Valley Tech, a
+              non-profit organization. Through this transformative experience, I
+              gained proficiency in HTML, CSS, JavaScript, React, Bootstrap, UI
+              Design, Node.js, MongoDB, SQL, Git, and developed a comprehensive
+              understanding of programming and software development.
+            </p>
+            <h1> GOALS</h1>
+            <p>
+              My goal is to continue honing my skills with the current tech
+              stack I am familiar with, enabling me to apply these skills
+              effectively in future job tasks. I am currently enrolled in Bay
+              Valley Tech's internship program, where I am applying my skill set
+              to real-world projects. Once the internship concludes, I aim to
+              secure a full-time position and advance within the industry. To
+              achieve this, I will remain actively involved, ask questions when
+              necessary, and eagerly participate in project discussions.
+            </p>
+          </div>
         </section>
-
-
-    </>
-    )
+      </>
+    );
 }
