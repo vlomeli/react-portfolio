@@ -16,24 +16,91 @@ body {
 }
 
 /*css foR about page */
-
 .about {
   display: flex;
+  justify-content: center;
   align-items: center;
-  padding: 0 20%;
-  text-align: center;
-  margin-top: 3%;
+  padding: 5% 10%;
+  flex-direction: column; /* Ensure items are stacked vertically */
 }
 
-.about-content h1 {
+.about h1 {
+  margin-top: -3%; /* Adjusted to positive value for margin from the top */
+  margin-bottom: 4%; /* Adjusted for more compact spacing */
+  font-size: 32px;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card2 {
+  background-color: #1f305e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0px 5px black;
+  transition: transform 0.3s;
+}
+
+.card2:hover {
+  transform: scale(1.05);
+}
+
+.card2 h1 {
+  color: #00abf0;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card2 p {
+  font-size: 18px;
   color: white;
-  font-size: 30px;
+  line-height: 1.6;
 }
 
-.about-content p {
-  font-size: 20px;
+/* Specific positioning for each card */
+.about-card1 {
+  grid-column: 1;
 }
 
+.about-card2 {
+  grid-column: 2;
+}
+
+.about-card3 {
+  grid-column: span 2;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .card2 {
+    padding: 15px;
+  }
+
+  .card2 h1 {
+    font-size: 22px;
+  }
+
+  .card2 p {
+    font-size: 16px;
+  }
+
+  /* Reset margins for mobile view */
+  .about-card1,
+  .about-card2,
+  .about-card3 {
+    margin-left: 0;
+    margin-right: 0;
+    grid-column: span 1;
+  }
+}
 /*css foR home page */
 
 .home {
@@ -200,7 +267,7 @@ body {
 .contact {
   display: flex;
   justify-content: center;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 
 form {
@@ -289,12 +356,12 @@ input[type="submit"] {
   /* about */
 
   .about {
-    border: yellow solid;
+    border: ;
     text-align: center;
   }
 
   .about p {
-    border: green solid;
+    border: ;
     font-size: 16px;
   }
 }
