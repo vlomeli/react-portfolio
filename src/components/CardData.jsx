@@ -5,6 +5,8 @@ import multiplication from "../images/multiplication.png";
 import weatherapp from "../images/weatherapp.png";
 import loginui from "../images/loginui.png";
 import reactweatherapp from "../images/reactweatherapp.png";
+//import github from "../images/github.png";
+
 
 const CardData = [
   {
@@ -12,6 +14,7 @@ const CardData = [
     title: "Journal",
     description:
       "This is my first ever fullstack project. A journal with mood tracking and an interactive calendar.",
+      //githubURL:,
   },
   {
     img: tictactoe,

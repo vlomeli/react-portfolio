@@ -13,6 +13,10 @@ const Card = ({ details }) => {
     }
   };
 
+  const handleCloseModal = () => {
+    setExpandedIndex(null);
+  };
+
   return (
     <div className="cards-container">
       {details.map((value, index) => (
@@ -30,6 +34,22 @@ const Card = ({ details }) => {
           </div>
         </div>
       ))}
+
+      {expandedIndex !== null && (
+        <div className="modal-overlay" onClick={handleCloseModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="modal-close" onClick={handleCloseModal}>
+              &times;
+            </span>
+            <img
+              src={details[expandedIndex].img}
+              alt={details[expandedIndex].title}
+            />
+            <h2>{details[expandedIndex].title}</h2>
+            <p>{details[expandedIndex].description}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

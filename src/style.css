@@ -317,6 +317,52 @@ body {
   /* Add other styles as needed */
 }
 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: blue;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;  /* Adjusted to a smaller width */
+  width: 80%;
+  box-shadow: 0 0 10px black;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;  /* Adjusted for smaller modal */
+  right: 10px;  /* Adjusted for smaller modal */
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  font-size: 20px; /* Adjust font size for smaller modal */
+}
+
+.modal-content p {
+  font-size: 16px; /* Adjust font size for smaller modal */
+}
+
 /*css for form / contact page */
 
 .contact h1 {
