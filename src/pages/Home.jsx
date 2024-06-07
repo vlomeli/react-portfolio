@@ -18,7 +18,7 @@ export default function Home() {
         <section className="home">
           <div className="home-content">
             <h1>Hi, I'm Victor Lomeli Ponce</h1>
-            <h3>Full-stack Web Developer</h3>
+            <h3 className='typing-animation'>Full-stack Web Developer</h3>
             <p>
               Take a peek at what I've been working on. Whether you have a
               project idea or just want to chat about web development, feel free

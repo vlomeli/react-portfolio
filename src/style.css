@@ -117,12 +117,18 @@ body {
   color: white;
   font-size: 43px;
   font-weight: 700;
+  margin-bottom: 10px; /* Added bottom margin */
 }
 
 .home-content h3 {
   font-size: 32px;
   font-weight: 700;
   color: #00abf0;
+  margin-top: 20px;
+}
+
+.home-content p {
+  margin-top: 0px; /* Added top margin for consistency */
 }
 
 .socials {
@@ -146,6 +152,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-top: -15.5%;
 }
 
 .tech-icons {
@@ -163,7 +170,37 @@ body {
 }
 
 .tech-icon:hover {
-  transform: translateY(-20px); /* Move the image up by 10 pixels on hover */
+  transform: translateY(-15px); /* Move the image up by 10 pixels on hover */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 63%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0.15em solid white;
+  animation: typing 2s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
+  animation-delay: 0s, 3s;
+  width: 0;
 }
 
 /*css for navbar */
@@ -218,15 +255,22 @@ body {
 
 /*css for cards / project page */
 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .card {
   border: 1px solid black;
   box-shadow: 0 0 5px black;
-  width: 250px;
+  width: calc(22.5% - 40px); /* Adjusted for 4 columns and smaller width */
   margin: 20px;
+  min-height: 300px; /* Minimum height to accommodate content */
 }
 
 .card-image img {
-  width: 249px;
+  width: 100%;
   height: 160px;
 }
 
@@ -255,6 +299,22 @@ body {
 
 .project-cards > .card {
   display: inline-block;
+}
+
+.card:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Light grey background with 10% opacity */
+  transform: scale(1.02); /* Slightly enlarge the card on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for the effects */
+}
+
+.card.expanded {
+  transform: scale(1.2); /* Example: scale up the card */
+  /* Add other styles as needed */
 }
 
 /*css for form / contact page */
@@ -317,9 +377,30 @@ input[type="submit"] {
 }
 
 @media (max-width: 768px) {
-  /* body {
-    display: none;
-    } */
+  /* projects */
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: calc(30% - 40px); /* Adjust the width as needed */
+    margin: 20px;
+    min-height: 250px; /* Adjust the minimum height as needed */
+  }
+
+  .card-image img {
+    height: 120px; /* Adjust the image height as needed */
+  }
+
+  .card-title {
+    font-size: 12px; /* Adjust the font size as needed */
+  }
+
+  .description {
+    font-size: 10px; /* Adjust the font size as needed */
+  }
 }
 
 @media (max-width: 500px) {
@@ -351,6 +432,7 @@ input[type="submit"] {
   .techstack {
     display: flex;
     justify-content: center;
+    margin-top: -5%;
   }
 
   /* about */
@@ -363,5 +445,16 @@ input[type="submit"] {
   .about p {
     border: ;
     font-size: 16px;
+  }
+
+  /* projects */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 400px;
   }
 }
