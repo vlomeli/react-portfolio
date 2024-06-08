@@ -264,6 +264,7 @@ body {
 .card {
   border: 1px solid black;
   box-shadow: 0 0 5px black;
+  background-color: black;
   width: calc(22.5% - 40px); /* Adjusted for 4 columns and smaller width */
   margin: 20px;
   min-height: 300px; /* Minimum height to accommodate content */
@@ -290,6 +291,16 @@ body {
   font-size: 12px;
 }
 
+.card a img {
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.card:hover a img {
+  transform: translateY(-40px); /* Slightly move the GitHub image up on hover */
+}
+
 .project-cards {
   width: 80%;
   text-align: center;
@@ -307,14 +318,13 @@ body {
     255,
     255,
     0.1
-  ); /* Light grey background with 10% opacity */
-  transform: scale(1.02); /* Slightly enlarge the card on hover */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for the effects */
+  ); 
+  transform: scale(1.02); 
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .card.expanded {
-  transform: scale(1.2); /* Example: scale up the card */
-  /* Add other styles as needed */
+  transform: scale(1.2); 
 }
 
 .modal-overlay {
@@ -331,10 +341,10 @@ body {
 }
 
 .modal-content {
-  background-color: blue;
+  background-color: transparent;
   padding: 20px;
-  border-radius: 10px;
-  max-width: 400px;  /* Adjusted to a smaller width */
+  border-radius: 5px;
+  max-width: 400px;  
   width: 80%;
   box-shadow: 0 0 10px black;
   text-align: center;
@@ -348,8 +358,8 @@ body {
 
 .modal-close {
   position: absolute;
-  top: 10px;  /* Adjusted for smaller modal */
-  right: 10px;  /* Adjusted for smaller modal */
+  top: 1%;  
+  right: 1%; 
   font-size: 24px;
   color: white;
   cursor: pointer;

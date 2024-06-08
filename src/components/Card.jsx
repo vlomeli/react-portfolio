@@ -1,6 +1,7 @@
 
 import { useState } from "react";
 import CardData from "./CardData.jsx"; // Assuming CardData is exported correctly
+import github from "../images/github.png";
 
 const Card = ({ details }) => {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -31,6 +32,19 @@ const Card = ({ details }) => {
           <div>
             <p className="card-title">{value.title}</p>
             <p className="description">{value.description}</p>
+            {value.githubUrl && (
+              <a
+                href={value.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={github}
+                  alt="GitHub"
+                  style={{ width: "30px", height: "30px" }}
+                />
+              </a>
+            )}
           </div>
         </div>
       ))}
@@ -47,6 +61,19 @@ const Card = ({ details }) => {
             />
             <h2>{details[expandedIndex].title}</h2>
             <p>{details[expandedIndex].description}</p>
+            {details[expandedIndex].githubUrl && (
+              <a
+                href={details[expandedIndex].githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={github}
+                  alt="GitHub"
+                  style={{ width: "30px", height: "30px" }}
+                />
+              </a>
+            )}
           </div>
         </div>
       )}
