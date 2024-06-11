@@ -5,15 +5,31 @@ import multiplication from "../images/multiplication.png";
 import weatherapp from "../images/weatherapp.png";
 import loginui from "../images/loginui.png";
 import reactweatherapp from "../images/reactweatherapp.png";
+import testingtool from "../images/testingtool.png";
+import socialmedia from "../images/socialmedia.png";
 
 
 
 const CardData = [
   {
-    img: journal,
-    title: "Journal",
+    img: socialmedia,
+    title: "Full-stack Social Media",
     description:
-      "Crafted my inaugural full-stack endeavor: a journal equipped with mood tracking and an interactive calendar. Leveraging React, Express, and SQL, the goal was to put into practice all the skills I have acquired.",
+      "During my time at BVT, my team and I developed a full-stack social media application using React, Bulma, MongoDB, and Express.js. This platform enables users to share text-based posts and express themselves, fostering engagement and interaction among the community.",
+    //githubURL: "https://github.com/FrancescaImmediato/dev-duckies-sm-proj-front", "https://github.com/JJeshua/ddsm-back-end",
+  },
+  {
+    img: testingtool,
+    title: "Python Testing Tool",
+    description:
+      "My team and I developed a Python testing tool designed to rigorously stress test our social media application's endpoints. Leveraging pytest for testing and faker for generating dummy data, this mini project aimed to cover a wide range of scenarios and edge cases, ensuring robust performance and reliability.",
+    //githubURL: "https://github.com/JJeshua/ddsm-backend-testing-tool",
+  },
+  {
+    img: journal,
+    title: "Full-stack Journal",
+    description:
+      "Crafted my inaugural full-stack endeavor: a journal equipped with mood tracking and an interactive calendar. Leveraging React, CSS, Express.js, and SQL, the goal was to put into practice all the skills I have acquired.",
     //githubURL: "https://github.com/vlomeli/journal-frontend",
   },
   {
