@@ -117,7 +117,7 @@ body {
   color: white;
   font-size: 43px;
   font-weight: 700;
-  margin-bottom: 10px; /* Added bottom margin */
+  margin-bottom: 10px; 
 }
 
 .home-content h3 {
@@ -128,7 +128,7 @@ body {
 }
 
 .home-content p {
-  margin-top: 0px; /* Added top margin for consistency */
+  margin-top: 0px; 
 }
 
 .socials {
@@ -141,7 +141,7 @@ body {
   width: 30px;
   height: 30px;
   margin-right: 10px;
-  transition: transform 0.3s ease-in-out; /* moved transition here */
+  transition: transform 0.3s ease-in-out; 
 }
 
 .social-icon:hover img {
@@ -166,11 +166,11 @@ body {
 }
 
 .tech-icon {
-  transition: transform 0.3s ease-in-out; /* Add a smooth transition effect */
+  transition: transform 0.3s ease-in-out; 
 }
 
 .tech-icon:hover {
-  transform: translateY(-15px); /* Move the image up by 10 pixels on hover */
+  transform: translateY(-15px); 
 }
 
 @keyframes typing {
@@ -263,11 +263,11 @@ body {
 
 .card {
   border: 1px solid black;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 5px 10px black;
   background-color: black;
-  width: calc(22.5% - 40px); /* Adjusted for 4 columns and smaller width */
+  width: calc(22.5% - 40px);
   margin: 20px;
-  min-height: 300px; /* Minimum height to accommodate content */
+  min-height: 300px; 
 }
 
 .card-image img {
@@ -294,11 +294,11 @@ body {
 .card a img {
   display: block;
   margin: 0 auto;
-  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  transition: transform 0.3s ease-in-out; 
 }
 
 .card:hover a img {
-  transform: translateY(-40px); /* Slightly move the GitHub image up on hover */
+  transform: translateY(-40px);
 }
 
 .project-cards {
@@ -366,11 +366,11 @@ body {
 }
 
 .modal-content h2 {
-  font-size: 20px; /* Adjust font size for smaller modal */
+  font-size: 20px; 
 }
 
 .modal-content p {
-  font-size: 16px; /* Adjust font size for smaller modal */
+  font-size: 16px; 
 }
 
 /*css for form / contact page */
@@ -441,28 +441,28 @@ input[type="submit"] {
   }
 
   .card {
-    width: calc(30% - 40px); /* Adjust the width as needed */
+    width: calc(30% - 40px); 
     margin: 20px;
-    min-height: 250px; /* Adjust the minimum height as needed */
+    min-height: 250px; 
   }
 
   .card-image img {
-    height: 120px; /* Adjust the image height as needed */
+    height: 120px; 
   }
 
   .card-title {
-    font-size: 12px; /* Adjust the font size as needed */
+    font-size: 12px; 
   }
 
   .description {
-    font-size: 10px; /* Adjust the font size as needed */
+    font-size: 10px; 
   }
 }
 
 @media (max-width: 500px) {
-  /* body {
+   body {
         display: none;
-        } */
+        } 
 
   .navbar {
     height: 170px;
