@@ -25,15 +25,15 @@ body {
 }
 
 .about h1 {
-  margin-top: -3%; /* Adjusted to positive value for margin from the top */
-  margin-bottom: 4%; /* Adjusted for more compact spacing */
+  margin-top: -30px; /* Adjusted to positive value for margin from the top */
+  margin-bottom: 50px; /* Adjusted for more compact spacing */
   font-size: 32px;
 }
 
 .about-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 25px;
   max-width: 1200px;
   width: 100%;
 }
@@ -42,7 +42,7 @@ body {
   background-color: #1f305e;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0px 5px black;
+  box-shadow: 0 5px 5px #00abf0;
   transition: transform 0.3s;
 }
 
