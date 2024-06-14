@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Luckiest+Guy&family=Permanent+Marker&family=Playpen+Sans:wght@800&family=Rubik:wght@300&display=swap");
 
 * {
@@ -75,34 +76,7 @@ body {
   grid-column: span 2;
 }
 
-@media (max-width: 1024px) {
-  .about-content {
-    grid-template-columns: 1fr;
-  }
-
-  .card2 {
-    padding: 15px;
-  }
-
-  .card2 h1 {
-    font-size: 22px;
-  }
-
-  .card2 p {
-    font-size: 16px;
-  }
-
-  /* Reset margins for mobile view */
-  .about-card1,
-  .about-card2,
-  .about-card3 {
-    margin-left: 0;
-    margin-right: 0;
-    grid-column: span 1;
-  }
-}
 /*css foR home page */
-
 .home {
   display: flex;
   justify-content: center;
@@ -197,14 +171,12 @@ body {
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.15em solid white;
-  animation: typing 2s steps(40, end) forwards,
-    blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
   animation-delay: 0s, 3s;
   width: 0;
 }
 
 /*css for navbar */
-
 .container {
   max-width: 1600px;
   margin: 0 auto;
@@ -254,7 +226,6 @@ body {
 }
 
 /*css for cards / project page */
-
 .cards-container {
   display: flex;
   flex-wrap: wrap;
@@ -270,20 +241,6 @@ body {
   width: calc(25% - 40px);
   margin: 20px;
   min-height: 300px;
-}
-
-@media (max-width: 1200px) {
-  .card {
-    width: calc(50% - 20px); /* 2 columns on medium screens */
-    margin: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .card {
-    width: calc(100% - 20px); /* 1 column on small screens */
-    margin: 10px;
-  }
 }
 
 .card-image img {
@@ -384,36 +341,7 @@ body {
   font-size: 16px;
 }
 
-@media (max-width: 768px) {
-  /* Adjustments for medium screens */
-  .card {
-    width: calc(50% - 20px); /* 2 columns on medium screens */
-    margin: 10px;
-  }
-
-  .card-image img {
-    height: 120px;
-  }
-
-  .card-title {
-    font-size: 12px;
-  }
-
-  .description {
-    font-size: 10px;
-  }
-}
-
-@media (max-width: 500px) {
-  /* Adjustments for smaller screens */
-  .card {
-    width: calc(100% - 20px); /* 1 column on smaller screens */
-    margin: 10px;
-  }
-}
-
 /*css for form / contact page */
-
 .contact h1 {
   text-align: center;
   font-size: 30px;
@@ -424,7 +352,6 @@ body {
   justify-content: center;
   margin-top: 2%;
 }
-
 
 form {
   display: flex;
@@ -473,28 +400,137 @@ input[type="submit"] {
 }
 
 .links-row {
-    color: white;
-    display: flex;
-    justify-content: center;
-    gap: 20px; 
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .links-row h3 {
-    margin: 0;
+  margin: 0;
 }
 
-.links-row a{
+.links-row a {
   color: white;
   text-decoration: none;
 }
 
 .links-row a:hover {
-    color: #00abf0; 
-    text-decoration: underline; 
+  color: #00abf0;
+  text-decoration: underline;
 }
 
-
 /* Media queries */
+
+/* Navbar */
+@media (max-width: 500px) {
+  .navbar {
+    height: 170px;
+    padding: 10px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Home */
+@media (max-width: 500px) {
+  .home {
+    text-align: center;
+  }
+
+  .techstack {
+    display: flex;
+    justify-content: center;
+    margin-top: -5%;
+  }
+}
+
+/* About */
+@media (max-width: 1024px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .card2 {
+    padding: 15px;
+  }
+
+  .card2 h1 {
+    font-size: 22px;
+  }
+
+  .card2 p {
+    font-size: 16px;
+  }
+
+  /* Reset margins for mobile view */
+  .about-card1,
+  .about-card2,
+  .about-card3 {
+    margin-left: 0;
+    margin-right: 0;
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .about {
+    text-align: center;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+}
+
+/* Projects */
+@media (max-width: 1200px) {
+  .card {
+    width: calc(50% - 20px); /* 2 columns on medium screens */
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(100% - 20px); /* 1 column on small screens */
+    margin: 10px;
+  }
+
+  .card-image img {
+    height: 120px;
+  }
+
+  .card-title {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 10px;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+/* Contact */
 @media (max-width: 1024px) {
   form {
     width: 90%; /* Adjust the width for smaller screens */
@@ -513,14 +549,15 @@ input[type="submit"] {
 }
 
 @media (max-width: 768px) {
- .contact {
+  .contact {
     flex-direction: column; /* Stack content vertically */
   }
 
- .contact h1,.contact h3 {
+  .contact h1,
+  .contact h3 {
     text-align: center; /* Ensure h1 and h3 are centered horizontally */
   }
-  
+
   form {
     width: 95%; /* Further adjust the width for smaller screens */
     margin: 30px; /* Further reduce the margin */
@@ -538,7 +575,6 @@ input[type="submit"] {
 }
 
 @media (max-width: 480px) {
-
   form {
     width: 100%; /* Ensure the form is full-width on very small screens */
     margin: 20px; /* Further reduce the margin */
@@ -552,83 +588,5 @@ input[type="submit"] {
 
   input[type="submit"] {
     padding: 10px 20px; /* Adjust the submit button padding */
-  }
-}
-
- /* projects media queries */
-@media (max-width: 768px) {
-  .cards-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card-image img {
-    height: 120px;
-  }
-
-  .card-title {
-    font-size: 12px;
-  }
-
-  .description {
-    font-size: 10px;
-  }
-}
-
-
-@media (max-width: 500px) {
-  /*body {
-        display: none;
-        } */
-
-  .navbar {
-    height: 170px;
-
-    padding: 10px;
-  }
-
-  .navbar .flex {
-    flex-direction: column;
-  }
-
-  .navbar ul {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-
-  /* Home */
-
-  .home {
-    text-align: center;
-  }
-
-  .techstack {
-    display: flex;
-    justify-content: center;
-    margin-top: -5%;
-  }
-
-  /* about */
-
-  .about {
-    border: ;
-    text-align: center;
-  }
-
-  .about p {
-    border: ;
-    font-size: 16px;
-  }
-
-  /* projects */
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 80%;
-    max-width: 400px;
   }
 }
