@@ -460,9 +460,9 @@ input[type="submit"] {
 }
 
 @media (max-width: 500px) {
-   body {
+   /*body {
         display: none;
-        } 
+        } */
 
   .navbar {
     height: 170px;
