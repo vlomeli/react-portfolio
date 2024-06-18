@@ -37,7 +37,7 @@ const CardData = [
     title: "Tic-Tac-Toe",
     description:
       "Worked on improving a Tic Tac Toe game by adding win tracking and a reset feature. This project was all about getting better at JavaScript through hands-on practice.",
-    //githubURL: "",
+    //githubURL: "https://github.com/vlomeli/Module-2-JS-FP",
   },
   {
     img: emailtemp,
