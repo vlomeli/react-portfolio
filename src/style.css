@@ -347,6 +347,11 @@ body {
   font-size: 30px;
 }
 
+.contact h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -423,7 +428,7 @@ input[type="submit"] {
 /* Media queries */
 
 /* Navbar */
-@media (max-width: 500px) {
+@media (max-width: 580px) {
   .navbar {
     height: 170px;
     padding: 10px;
@@ -440,7 +445,7 @@ input[type="submit"] {
 }
 
 /* Home */
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   .home {
     text-align: center;
   }
@@ -449,6 +454,29 @@ input[type="submit"] {
     display: flex;
     justify-content: center;
     margin-top: -5%;
+  }
+
+    @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%; /* Adjusted from 63% to 100% to ensure full width utilization */
+    }
+  }
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: wrap;
+  border-right: 0.15em solid white;
+  animation: typing 2s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+  animation-delay: 0s, 3s;
+  width: 0; /* Initial width set to 0 */
+}
+
+  .home-content h3 {
+    width: 100px;
   }
 }
 
@@ -487,6 +515,10 @@ input[type="submit"] {
 
   .about p {
     font-size: 16px;
+  }
+
+  .about h1 {
+    margin-top: auto;
   }
 }
 
@@ -532,20 +564,7 @@ input[type="submit"] {
 
 /* Contact */
 @media (max-width: 1024px) {
-  form {
-    width: 90%; /* Adjust the width for smaller screens */
-    margin: 40px; /* Reduce the margin */
-    padding: 50px; /* Reduce the padding */
-  }
-
-  input,
-  textarea {
-    font-size: 14px; /* Adjust the font size */
-  }
-
-  input[type="submit"] {
-    padding: 10px 20px; /* Adjust the submit button padding */
-  }
+  
 }
 
 @media (max-width: 768px) {
@@ -560,7 +579,7 @@ input[type="submit"] {
 
   form {
     width: 95%; /* Further adjust the width for smaller screens */
-    margin: 30px; /* Further reduce the margin */
+    margin: auto; /* Further reduce the margin */
     padding: 40px; /* Further reduce the padding */
   }
 
@@ -577,9 +596,18 @@ input[type="submit"] {
 @media (max-width: 480px) {
   form {
     width: 100%; /* Ensure the form is full-width on very small screens */
-    margin: 20px; /* Further reduce the margin */
+    margin: 0; /* Further reduce the margin */
     padding: 20px; /* Further reduce the padding */
   }
+
+  .contact h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.links-row h3  {
+ margin-bottom: 15px;
+}
 
   input,
   textarea {

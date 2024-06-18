@@ -34,7 +34,7 @@ export default function Contact() {
               <input type="submit" value="Send" />
             </form>
             <section className="contact-links">
-              <h1>vlponcebusiness@gmail.com</h1>
+              <h3>vlponcebusiness@gmail.com</h3>
               <div className="links-row">
                 <h3>
                   <a href="https://www.linkedin.com/in/vlomeliponce/">
