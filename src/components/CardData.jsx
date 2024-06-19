@@ -7,6 +7,8 @@ import loginui from "../images/loginui.png";
 import reactweatherapp from "../images/reactweatherapp.png";
 import testingtool from "../images/testingtool.png";
 import socialmedia from "../images/socialmedia.png";
+import bitratecalculator from "../images/bitratecalculator.png";
+
 
 
 
@@ -31,6 +33,13 @@ const CardData = [
     description:
       "Crafted my inaugural full-stack endeavor: a journal equipped with mood tracking and an interactive calendar. Leveraging React, CSS, Express.js, and SQL, the goal was to put into practice all the skills I have acquired.",
     //githubURL: "https://github.com/vlomeli/journal-frontend",
+  },
+  {
+    img: bitratecalculator,
+    title: "Stream Bitrate Calculator",
+    description:
+      "I developed a calculator designed to help streamers determine the ideal bitrate based on their internet speed, resolution, frame rate, and encoding technology. This tool aims to optimize both the quality and interactivity of their streams.",
+    //githubURL: "https://github.com/vlomeli/stream-bitrate-calculator",
   },
   {
     img: tictactoe,
