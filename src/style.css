@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Luckiest+Guy&family=Permanent+Marker&family=Playpen+Sans:wght@800&family=Rubik:wght@300&display=swap");
 
 * {
@@ -171,7 +170,8 @@ body {
   overflow: hidden;
   white-space: nowrap;
   border-right: 0.15em solid white;
-  animation: typing 2s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+  animation: typing 2s steps(40, end) forwards,
+    blink-caret 0.75s step-end infinite;
   animation-delay: 0s, 3s;
   width: 0;
 }
@@ -456,7 +456,7 @@ input[type="submit"] {
     margin-top: -5%;
   }
 
-    @keyframes typing {
+  @keyframes typing {
     from {
       width: 0;
     }
@@ -465,15 +465,16 @@ input[type="submit"] {
     }
   }
 
-.typing-animation {
-  display: inline-block;
-  overflow: hidden;
-  white-space: wrap;
-  border-right: 0.15em solid white;
-  animation: typing 2s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
-  animation-delay: 0s, 3s;
-  width: 0; /* Initial width set to 0 */
-}
+  .typing-animation {
+    display: inline-block;
+    overflow: hidden;
+    white-space: wrap;
+    border-right: 0.15em solid white;
+    animation: typing 2s steps(40, end) forwards,
+      blink-caret 0.75s step-end infinite;
+    animation-delay: 0s, 3s;
+    width: 0; /* Initial width set to 0 */
+  }
 
   .home-content h3 {
     width: 100px;
@@ -564,7 +565,6 @@ input[type="submit"] {
 
 /* Contact */
 @media (max-width: 1024px) {
-  
 }
 
 @media (max-width: 768px) {
@@ -601,13 +601,13 @@ input[type="submit"] {
   }
 
   .contact h1 {
-  text-align: center;
-  margin-top: 10px;
-}
+    text-align: center;
+    margin-top: 10px;
+  }
 
-.links-row h3  {
- margin-bottom: 15px;
-}
+  .links-row h3 {
+    margin-bottom: 15px;
+  }
 
   input,
   textarea {

@@ -69,20 +69,6 @@ const CardData = [
       "Designed a login page for BVT to hone my CSS and HTML skills, adopting a straightforward approach while aligning with their existing design taste.",
     //githubURL: "https://github.com/vlomeli/login-ui-vlomeli",
   },
-  {
-    img: reactweatherapp,
-    title: "React Weather App (Code Along)",
-    description:
-      "Second project working with an api, but taking my skill to a new level with react.",
-    //githubURL: "https://github.com/vlomeli/react-weather-app",
-  },
-  {
-    img: weatherapp,
-    title: "Weather App (Code Along)",
-    description:
-      "First ever API project. Just a simple website that retrieves weather data from openweatherapi",
-    //githubURL: "https://github.com/vlomeli/multiplication-sheet",
-  },
 ];
 
 export default CardData;
