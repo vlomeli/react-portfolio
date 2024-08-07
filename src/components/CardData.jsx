@@ -2,9 +2,8 @@ import journal from "../images/fs-journal.png";
 import tictactoe from "../images/tictactoe.png";
 import emailtemp from "../images/emailtemp.png";
 import multiplication from "../images/multiplication.png";
-import weatherapp from "../images/weatherapp.png";
 import loginui from "../images/loginui.png";
-import reactweatherapp from "../images/reactweatherapp.png";
+import detailing from "../images/detailing.png";
 import testingtool from "../images/testingtool.png";
 import socialmedia from "../images/socialmedia.png";
 import bitratecalculator from "../images/bitratecalculator.png";
@@ -13,6 +12,14 @@ import bitratecalculator from "../images/bitratecalculator.png";
 
 
 const CardData = [
+
+  {
+    img: detailing,
+    title: "Freelance Detailing Website",
+    description:
+      "A local detailing company needed to expand their business online, so I created a website for them. Using HTML, JavaScript, and CSS, I developed a solution featuring EmailJS for quote requests and an embedded map to display their location. The website is hosted with a custom domain.",
+    //githubURL: "https://github.com/vlomeli/ddsm-front-end",
+  },
   {
     img: socialmedia,
     title: "Full-stack Social Media",
