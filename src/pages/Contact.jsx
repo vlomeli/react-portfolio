@@ -7,12 +7,14 @@ export default function Contact() {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_w2spjch', 'template_xdtgrec', form.current, 'MAlFkml9eGdPHhKb4')
+      emailjs.sendForm('service_w2spjch', 'template_xdtgrec', form.current, import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
         .then((result) => {
             console.log(result.text);
             console.log("message sent");
             window.alert('Email has been sent!');
             form.current.reset();
+            console.log("EMAILJS API KEY:", import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
         }, 
         (error) => {
             console.log(error.text);
