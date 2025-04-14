@@ -1,6 +1,4 @@
-
 import { useState } from "react";
-import CardData from "./CardData.jsx"; // Assuming CardData is exported correctly
 import github from "../images/github.png";
 
 const Card = ({ details }) => {
@@ -35,7 +33,7 @@ const Card = ({ details }) => {
             {value.githubUrl && (
               <a
                 href={value.githubUrl}
-                target="_blank"
+                target="_blank" 
                 rel="noopener noreferrer"
               >
                 <img
