@@ -1,13 +1,13 @@
-import detailing from "../images/detailing.png";
+import careerharvest from "../images/careerharvest.png";
 import socialmedia from "../images/socialmedia.png";
-import testingtool from "../images/testingtool.png";
+import nestwork from "../images/nestwork.png";
 
 const TopProjectsData = [
   {
-    img: detailing,
-    title: "Freelance Detailing Website",
+    img: careerharvest,
+    title: "Career Harvest",
     description:
-      "A local detailing company needed to expand their business online, so I created a website for them. Using HTML, JavaScript, and CSS, I developed a solution featuring EmailJS for quote requests and an embedded map to display their location. The website is hosted with a custom domain.",
+      "Contributed to an internal Digital Nest tool that web scrapes job listings based on the specific career paths interns choose to explore. Refactored the frontend for a cleaner, more user-friendly interface, and continue to maintain and enhance the platform by adding new features.",
     githubURL: "https://github.com/vlomeli/ddsm-front-end",
   },
   {
@@ -18,10 +18,10 @@ const TopProjectsData = [
     //githubURL: "https://github.com/vlomeli/ddsm-front-end", "https://github.com/vlomeli/ddsm-back-end",
   },
   {
-    img: testingtool,
-    title: "Python Testing Tool",
+    img: nestwork,
+    title: "Nestwork",
     description:
-      "My team and I developed a Python testing tool designed to rigorously stress test our social media application's endpoints. Leveraging pytest for testing and faker for generating dummy data, this mini project aimed to cover a wide range of scenarios and edge cases, ensuring robust performance and reliability.",
+      "Worked on an internal Digital Nest tool designed to streamline meeting scheduling with interns. As the intern pool continues to grow, this tool improves efficiency in managing organizational meetings. Contributed to implementing pairing functionality and enhancing the frontend for a smoother user experience.",
     //githubURL: "https://github.com/vlomeli/ddsm-backend-testing-tool",
   },
 ];

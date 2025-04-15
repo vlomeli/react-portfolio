@@ -24,9 +24,9 @@ export default function Home() {
           <h1>Hi, I'm Victor Lomeli Ponce</h1>
           <h3 className="typing-animation">Full-stack Web Developer</h3>
           <p>
-            Take a peek at what I've been working on. Whether you have a project
-            idea or just want to chat about web development, feel free to reach
-            out! Thank you for stopping by! 🚀
+            I love to create things. I love to problem solve—which is why I love what I do. This website is a place where you can check
+            out some of my projects, learn a bit about who I am, and find my
+            contact info if you ever want to connect.
           </p>
           <div className="socials">
             <a
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       <section className="top-3">
-        {/* <h1 className="top-3-title"> TOP THREE PROJECTS</h1> */}
+        <h1 className="top-3-title"> TOP PROJECTS</h1>
         <Card details={TopProjectsData} />
       </section>
     </>

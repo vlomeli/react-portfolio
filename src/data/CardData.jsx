@@ -1,11 +1,11 @@
 import journal from "../images/fs-journal.png";
-import tictactoe from "../images/tictactoe.png";
+// import tictactoe from "../images/tictactoe.png";
 import emailtemp from "../images/emailtemp.png";
 import multiplication from "../images/multiplication.png";
 import loginui from "../images/loginui.png";
 import detailing from "../images/detailing.png";
 import testingtool from "../images/testingtool.png";
-import socialmedia from "../images/socialmedia.png";
+// import socialmedia from "../images/socialmedia.png";
 import bitratecalculator from "../images/bitratecalculator.png";
 
 const CardData = [
@@ -15,13 +15,6 @@ const CardData = [
     description:
       "A local detailing company needed to expand their business online, so I created a website for them. Using HTML, JavaScript, and CSS, I developed a solution featuring EmailJS for quote requests and an embedded map to display their location. The website is hosted with a custom domain.",
     githubURL: "https://github.com/vlomeli/ddsm-front-end",
-  },
-  {
-    img: socialmedia,
-    title: "Full-stack Social Media",
-    description:
-      "During my time at BVT, my team and I developed a full-stack social media application using React, Bulma, MongoDB, and Express.js. This platform enables users to share text-based posts and express themselves, fostering engagement and interaction among the community.",
-    //githubURL: "https://github.com/vlomeli/ddsm-front-end", "https://github.com/vlomeli/ddsm-back-end",
   },
   {
     img: testingtool,
@@ -45,11 +38,11 @@ const CardData = [
     //githubURL: "https://github.com/vlomeli/stream-bitrate-calculator",
   },
   {
-    img: tictactoe,
-    title: "Tic-Tac-Toe",
+    img: multiplication,
+    title: "Multiplication Sheet",
     description:
-      "Worked on improving a Tic Tac Toe game by adding win tracking and a reset feature. This project was all about getting better at JavaScript through hands-on practice.",
-    //githubURL: "https://github.com/vlomeli/Module-2-JS-FP",
+      "Created a multiplication practice project to enhance my JavaScript skills. It generates two random numbers between 1 and 10 for each problem, allowing you to practice multiplication and track your correct answers out of 24 problems. ",
+    //githubURL: "https://github.com/vlomeli/multiplication-sheet",
   },
   {
     img: emailtemp,
@@ -57,13 +50,6 @@ const CardData = [
     description:
       "One of my first projects at Bay Valley Tech was to get comfortable with a CSS framework. I used Bootstrap to create and refine a responsive grid layout, replicating an email template.",
     //githubURL: "https://github.com/vlomeli/Bootstrap-Email-vlomeli",
-  },
-  {
-    img: multiplication,
-    title: "Multiplication Sheet",
-    description:
-      "Created a multiplication practice project to enhance my JavaScript skills. It generates two random numbers between 1 and 10 for each problem, allowing you to practice multiplication and track your correct answers out of 24 problems. ",
-    //githubURL: "https://github.com/vlomeli/multiplication-sheet",
   },
   {
     img: loginui,
